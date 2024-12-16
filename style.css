@@ -112,37 +112,7 @@
   }
   
   
-  /* Contact Form */
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  label {
-    margin-top: 10px;
-  }
-  
-  input, textarea {
-    padding: 10px;
-    margin-top: 5px;
-    border: none;
-    border-radius: 5px;
-  }
-  
-  button {
-    margin-top: 15px;
-    padding: 10px;
-    background: #f1c40f;
-    color: #121212;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-  }
-  
-  button:hover {
-    background: #d4ac0d;
-  }
-  
+
   /* Footer */
   footer {
     background: #1e1e1e;
@@ -285,4 +255,58 @@
   width: 300px; /* Adjust width of the image */
   height: auto; /* Maintain aspect ratio */
   border-radius: 10px; /* Optional: Adds rounded corners */
+}
+/* Contact Section */
+#contact {
+  padding: 0px 0; /* Spacing above and below */
+  text-align: center;
+  background-color: #121212; /* Match the dark theme background */
+  color: #ffffff; /* White text for contrast */
+  border-top: 2px solid #f4a261; /* Add a subtle theme-colored top border */
+}
+
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #f4a261; /* Highlighted theme color for the heading */
+}
+
+#contact p {
+  font-size: 1.1rem;
+  color: #cccccc; /* Lighter gray for better readability */
+  margin-bottom: 30px;
+}
+
+/* Social Media Links */
+.social-links a {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 1.8rem;
+  
+  
+}
+
+.social-links a:hover {
+   /* Slightly darker hover effect */
+  transform: scale(1.1); /* Smooth zoom on hover */
+}
+
+.social-links img {
+  width: 35px;
+  height: 35px;
+  margin: 0 10px;
+  
+}
+
+/* Email Link Styling */
+.email-link {
+  text-decoration: none;
+  color: #f4a261; /* Theme color */
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.email-link:hover {
+  color: #e76f51; /* Darker shade for hover */
 }
