@@ -1,0 +1,224 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  
+  .section {
+    padding: 50px 0;
+    border-bottom: 1px solid #333;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #f1c40f;
+  }
+  .highlighted-heading {
+    color: #f9f8f5; /* Bright yellow color */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    margin-top: 15px;
+  }
+  
+  p {
+    margin-bottom: 15px;
+  }
+  
+  /* Navigation */
+  nav {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+  }
+  
+  nav .logo {
+    float: left;
+    font-size: 1.5rem;
+  }
+  
+  .nav-links {
+    float: right;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    display: inline;
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #f1c40f;
+  }
+  
+  /* Portfolio Items */
+  .portfolio-items {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .portfolio-item {
+    flex: 1 1 45%;
+    background: #333;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .portfolio-item img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  /* Contact Form */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-top: 10px;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  button {
+    margin-top: 15px;
+    padding: 10px;
+    background: #f1c40f;
+    color: #121212;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background: #d4ac0d;
+  }
+  
+  /* Footer */
+  footer {
+    background: #1e1e1e;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+  }
+  .education-stairs {
+    padding: 20px;
+    color: #fff; /* Text color */
+    font-family: Arial, sans-serif;
+  }
+  
+  .education-stairs h2 {
+    color: #ffcc00; /* Highlighted yellow */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .stairs {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .step {
+    background-color: #333; /* Dark card background */
+    border: 1px solid #444;
+    padding: 15px;
+    margin: 0 0 20px 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    width: 70%;
+  }
+  
+  .step:nth-child(even) {
+    margin-left: 40px; /* Staggered effect for steps */
+  }
+  
+  .step .year {
+    color: #ffcc00; /* Yellow year */
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .step h3 {
+    margin: 0;
+    color: #fff;
+    font-size: 1.2rem;
+  }
+  
+  .step p {
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+  /* Skills Section */
+#skills {
+    width: 80%;
+    margin: 50px auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  #skills h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .skill {
+    margin: 20px 0;
+  }
+  
+  .skill p {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .progress-bar {
+    width: 0; /* Initial width set to 0 for animation */
+    height: 20px;
+    background-color: #ccc; /* Default background */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .progress-bar::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0; /* Filled width */
+    background: linear-gradient(to right, #007bff, #00c6ff); /* Adjust color */
+    transition: width 1.5s ease-in-out; /* Animation */
+  }
+  
