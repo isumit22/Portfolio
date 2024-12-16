@@ -1,10 +1,13 @@
 /* General Styles */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-  
+  #about {
+    padding-top: 100px; /* Adds space at the top of the "About Me" section */
+  }
   body {
     font-family: 'Poppins', sans-serif;
     background-color: #121212;
@@ -51,11 +54,13 @@
     width: 100%;
     top: 0;
     z-index: 100;
+    
   }
   
   nav .logo {
     float: left;
     font-size: 1.5rem;
+    
   }
   
   .nav-links {
@@ -96,6 +101,16 @@
     max-width: 100%;
     border-radius: 8px;
   }
+  .portfolio-image {
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .portfolio-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+  }
+  
   
   /* Contact Form */
   form {
@@ -221,4 +236,53 @@
     background: linear-gradient(to right, #007bff, #00c6ff); /* Adjust color */
     transition: width 1.5s ease-in-out; /* Animation */
   }
+  .portfolio-item {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+
+  .portfolio-item:hover {
+    transform: translateY(-10px); /* Moves the container up */
+  }
+
+  .portfolio-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+
+  .portfolio-item:hover img {
+    transform: scale(1.05); /* Slight zoom on image */
+  }
+
   
+.portfolio-item:hover .hover-arrow {
+    opacity: 1; /* Arrow shows up on hover */
+  }
+
+  h4 {
+    text-align: center;
+    margin-top: 10px;
+  }
+  /* About Section Container */
+.about-container {
+  display: flex; /* Use flexbox */
+  align-items: center; /* Vertically align content */
+  justify-content: space-between; /* Add space between text and image */
+  gap: 20px; /* Adds space between text and image */
+}
+
+/* Left Content Styling */
+.about-text {
+  flex: 1; /* Takes available space */
+}
+
+/* Right Image Styling */
+.about-image img {
+  width: 300px; /* Adjust width of the image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: Adds rounded corners */
+}
