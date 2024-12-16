@@ -268,7 +268,7 @@
 #contact h2 {
   font-size: 2rem;
   margin-bottom: 15px;
-  color: #f4a261; /* Highlighted theme color for the heading */
+  color: #ffcc00; /* Highlighted theme color for the heading */
 }
 
 #contact p {
@@ -301,7 +301,7 @@
 /* Email Link Styling */
 .email-link {
   text-decoration: none;
-  color: #f4a261; /* Theme color */
+  color: #ffcc00; /* Theme color */
   font-size: 1.2rem;
   font-weight: bold;
   transition: color 0.3s ease;
