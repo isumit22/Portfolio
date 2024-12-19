@@ -1,4 +1,7 @@
 /* General Styles */
+html {
+  scroll-behavior: smooth;
+}
 
 * {
     margin: 0;
@@ -206,32 +209,7 @@
     background: linear-gradient(to right, #007bff, #00c6ff); /* Adjust color */
     transition: width 1.5s ease-in-out; /* Animation */
   }
-  .portfolio-item {
-    position: relative;
-    display: inline-block;
-    margin: 15px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-  }
-
-  .portfolio-item:hover {
-    transform: translateY(-10px); /* Moves the container up */
-  }
-
-  .portfolio-item img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s ease;
-  }
-
-  .portfolio-item:hover img {
-    transform: scale(1.05); /* Slight zoom on image */
-  }
-
   
-.portfolio-item:hover .hover-arrow {
-    opacity: 1; /* Arrow shows up on hover */
-  }
 
   h4 {
     text-align: center;
@@ -310,3 +288,92 @@
 .email-link:hover {
   color: #e76f51; /* Darker shade for hover */
 }
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+}
+/* Portfolio Items */
+.portfolio-items {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.portfolio-item {
+  flex: 1 1 calc(33% - 20px);
+  background: #333;
+  padding: 10px;
+  border-radius: 12px; /* Increased radius for smoother corners */
+  text-align: center;
+  overflow: hidden; /* Ensure images stay within the rounded corners */
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure uniform size and trim extra content */
+  border-radius: 12px; /* Matches the container's rounded corners */
+  transition: transform 0.3s;
+}
+
+.portfolio-item a:hover img {
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.portfolio-item h4 {
+  margin-top: 10px;
+}
+/* Portfolio Item Image */
+.portfolio-item img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s, border 0.3s; /* Adding transition for border */
+  border: 3px solid #000; /* Adding a slight black border */
+}
+.step {
+  background-color: #333; /* Dark card background */
+  border: 1px solid #444;
+  padding: 15px;
+  margin: 0 0 20px 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  width: 70%;
+  border-radius: 10px; /* Smooth corners */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions for movement and shadow */
+}
+
+.step:nth-child(even) {
+  margin-left: 40px; /* Staggered effect for steps */
+}
+
+.step:hover {
+  transform: translateY(-10px); /* Move slightly upward */
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+}
+
+.step .year {
+  color: #ffcc00; /* Yellow year */
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.step h3 {
+  margin: 0;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.step p {
+  margin: 5px 0 0;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+
