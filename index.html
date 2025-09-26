@@ -7,6 +7,8 @@
   <!-- Google Fonts and Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- EmailJS -->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   <!-- CSS File -->
   <link rel="stylesheet" href="style.css">
 </head>
@@ -144,7 +146,7 @@
       <div class="portfolio-items">
         <div class="portfolio-item featured-project">
           <div class="project-image">
-            <img src="Untitled design (4).png" alt="Waste Classification ML Model">
+            <img src="rhy.jpg" alt="Waste Classification ML Model">
             <div class="project-overlay">
               <div class="project-links">
                 <a href="https://github.com/isumit22/waste-classification-ml" target="_blank" class="project-link live">
@@ -178,6 +180,56 @@
               <span class="feature">• Flask web API with CORS</span>
               <span class="feature">• Smart disposal guidance system</span>
               <span class="feature">• Real-time image classification</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="project-image">
+            <img src="newpog.jpg" alt="Smart Waste Management System">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://login-eight-dun.vercel.app/" target="_blank" class="project-link live">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+                <div class="multi-repo-links">
+                  <span class="repo-label">3 Platform Repositories:</span>
+                  <a href="https://github.com/isumit22/project-SIH" target="_blank" class="project-link code mini">
+                    <i class="fab fa-github"></i> Swachh (Citizen)
+                  </a>
+                  <a href="https://github.com/isumit22/project-shawchh-sarthi" target="_blank" class="project-link code mini">
+                    <i class="fab fa-github"></i> Swachh Sarthi (Worker)
+                  </a>
+                  <a href="https://github.com/isumit22/project-swachh-niyantran" target="_blank" class="project-link code mini">
+                    <i class="fab fa-github"></i> Admin Dashboard
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-info">
+            <h4>🌱 Smart Waste Management System</h4>
+            <p class="project-description">
+              Multi-platform web-based waste management ecosystem with unified platform connecting 3 specialized portals: Swachh (citizen portal), Swachh Sarthi (waste collector platform), and Admin dashboard for municipal corporations.
+            </p>
+            
+            <div class="tech-stack">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Express</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Leaflet Maps</span>
+              <span class="tech-tag">Web Platform</span>
+            </div>
+            
+            <div class="project-features">
+              <span class="feature">• Unified platform connecting 3 portals</span>
+              <span class="feature">• Citizen web app with gamification</span>
+              <span class="feature">• Worker management platform</span>
+              <span class="feature">• Municipal admin dashboard</span>
+              <span class="feature">• GPS route optimization</span>
+              <span class="feature">• Real-time waste tracking</span>
             </div>
           </div>
         </div>
@@ -338,42 +390,71 @@
     <h2>My Skills</h2>
     <p>Here's a snapshot of my technical skills and experience.</p>
     
-    <div class="skill">
-      <p>HTML</p>
-      <div class="progress-bar" data-percent="85"></div>
-    </div>
-    
-    <div class="skill">
-      <p>CSS</p>
-      <div class="progress-bar" data-percent="90"></div>
-    </div>
-    
-    <div class="skill">
-      <p>JavaScript</p>
-      <div class="progress-bar" data-percent="70"></div>
-    </div>
-    
-    <div class="skill">
-      <p>C Language</p>
-      <div class="progress-bar" data-percent="90"></div>
-    </div>
+    <div class="skills-container">
+      <div class="skill">
+        <div class="skill-header">
+          <p>HTML</p>
+          <span class="skill-percentage">85%</span>
+        </div>
+        <div class="progress-bar" data-percent="85"></div>
+      </div>
+      
+      <div class="skill">
+        <div class="skill-header">
+          <p>CSS</p>
+          <span class="skill-percentage">90%</span>
+        </div>
+        <div class="progress-bar" data-percent="90"></div>
+      </div>
+      
+      <div class="skill">
+        <div class="skill-header">
+          <p>JavaScript</p>
+          <span class="skill-percentage">70%</span>
+        </div>
+        <div class="progress-bar" data-percent="70"></div>
+      </div>
+      
+      <div class="skill">
+        <div class="skill-header">
+          <p>C Language</p>
+          <span class="skill-percentage">90%</span>
+        </div>
+        <div class="progress-bar" data-percent="90"></div>
+      </div>
+      
+      <div class="skill">
+        <div class="skill-header">
+          <p>C++</p>
+          <span class="skill-percentage">74%</span>
+        </div>
+        <div class="progress-bar" data-percent="74"></div>
+      </div>
 
-    <div class="skill">
-        <p>DSA</p>
+      <div class="skill">
+        <div class="skill-header">
+          <p>DSA</p>
+          <span class="skill-percentage">35%</span>
+        </div>
         <div class="progress-bar" data-percent="35"></div>
       </div>
+      
       <div class="skill">
-  <p>Deployment</p>
-  <div class="progress-bar" data-percent="75">
-    
-  </div>
-</div>
-<div class="skill">
-  <p>Git & GitHub</p>
-  <div class="progress-bar" data-percent="85">
-    
-  </div>
-</div>
+        <div class="skill-header">
+          <p>Deployment</p>
+          <span class="skill-percentage">75%</span>
+        </div>
+        <div class="progress-bar" data-percent="75"></div>
+      </div>
+      
+      <div class="skill">
+        <div class="skill-header">
+          <p>Git & GitHub</p>
+          <span class="skill-percentage">85%</span>
+        </div>
+        <div class="progress-bar" data-percent="85"></div>
+      </div>
+    </div>
 
   </section>
   
@@ -446,33 +527,107 @@
 
   <!-- Contact Section -->
   <section id="contact" class="section fade-in-section">
-    <!-- Contact Section -->
-<section id="contact" style="text-align: center; padding: 50px; background-color: #333; color: white;">
-    <h2>Contact Me</h2>
-    <p>Feel free to reach out to me for collaborations, questions, or just to say hello!</p>
-  
-    <!-- Social Media Links -->
-    <div class="social-links" style="font-size: 2rem; margin-top: 20px;">
-      <a href="https://www.instagram.com/its_sumitch" target="_blank" style="margin: 0 15px; color: white;">
-        <img src="ibsta.png" alt="Instagram" style="width: 40px; height: 40px;">
-      </a>
-      <a href="https://www.linkedin.com/in/sumit-chaubey-33308a24b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" style="margin: 0 15px; color: white;">
-        <img src="lindn.png" alt="LinkedIn" style="width: 40px; height: 40px;">
-    
-      </a>
-      <a href="https://github.com/isumit22/" target="_blank" style="margin: 0 15px; color: white;">
-        <img src="github-original-wordmark-icon-256x253-2l79vijg.png" alt="LinkedIn" style="width: 40px; height: 40px;">
-    
-      </a>
-      <a href="https://leetcode.com/u/sumit22605/" target="_blank" style="margin: 0 15px; color: white;">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvhFQX5MMDl81fsQPbYdEnsO0g8d6QWdjQ5g&s" alt="LinkedIn" style="width: 40px; height: 40px;">
-    
-      </a>
+    <div class="container">
+      <h2>Get In Touch</h2>
+      <p class="contact-intro">Ready to start your next project? Let's collaborate and create something amazing together!</p>
+      
+      <div class="contact-content">
+        <!-- Contact Form -->
+        <div class="contact-form-container">
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <input type="text" id="name" name="name" required>
+              <label for="name">Your Name</label>
+              <span class="form-line"></span>
+            </div>
+            
+            <div class="form-group">
+              <input type="email" id="email" name="email" required>
+              <label for="email">Your Email</label>
+              <span class="form-line"></span>
+            </div>
+            
+            <div class="form-group">
+              <input type="text" id="subject" name="subject">
+              <label for="subject">Subject</label>
+              <span class="form-line"></span>
+            </div>
+            
+            <div class="form-group">
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <label for="message">Your Message</label>
+              <span class="form-line"></span>
+            </div>
+            
+            <button type="submit" class="submit-btn" id="submitBtn">
+              <span class="btn-text">Send Message</span>
+              <span class="btn-loading">Sending...</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+          
+          <!-- Success Message -->
+          <div id="successMessage" class="success-message">
+            <i class="fas fa-check-circle"></i>
+            <h3>Message Sent Successfully!</h3>
+            <p>Thank you for reaching out. I'll get back to you soon!</p>
+          </div>
+          
+          <!-- Error Message -->
+          <div id="errorMessage" class="error-message">
+            <i class="fas fa-exclamation-circle"></i>
+            <h3>Oops! Something went wrong</h3>
+            <p>Please try again or contact me directly via email.</p>
+          </div>
+        </div>
+        
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:sumit22605@gmail.com">sumit22605@gmail.com</a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h4>Phone</h4>
+              <span>Available on request</span>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Location</h4>
+              <span>India</span>
+            </div>
+          </div>
+          
+          <!-- Social Media Links -->
+          <div class="social-links">
+            <h4>Follow Me</h4>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/its_sumitch" target="_blank" title="Instagram">
+                <img src="ibsta.png" alt="Instagram">
+              </a>
+              <a href="https://www.linkedin.com/in/sumit-chaubey-33308a24b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" title="LinkedIn">
+                <img src="lindn.png" alt="LinkedIn">
+              </a>
+              <a href="https://github.com/isumit22/" target="_blank" title="GitHub">
+                <img src="github-original-wordmark-icon-256x253-2l79vijg.png" alt="GitHub">
+              </a>
+              <a href="https://leetcode.com/u/sumit22605/" target="_blank" title="LeetCode">
+                <i class="fas fa-code" style="color: #f1c40f; font-size: 1.8rem;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  
-    <!-- Email Link -->
-    <p style="margin-top: 20px;">
-      <a href="mailto:sumit22605@gmail.com" style="color: #f4a261; text-decoration: none;">sumit22605@gmail.com</a>
     </p>
   </section>
   

@@ -159,4 +159,68 @@ document.addEventListener("DOMContentLoaded", () => {
       window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
     }
   });
+
+  // Contact Form Functionality
+  const contactForm = document.getElementById('contactForm');
+  const submitBtn = document.getElementById('submitBtn');
+  const successMessage = document.getElementById('successMessage');
+  const errorMessage = document.getElementById('errorMessage');
+
+  // Initialize EmailJS (Replace with your actual public key)
+  emailjs.init("0kMjDT_V4F4iHI23U");
+
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Show loading state
+      submitBtn.classList.add('loading');
+      
+      // Get form data
+      const formData = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        subject: document.getElementById('subject').value || 'Portfolio Contact',
+        message: document.getElementById('message').value
+      };
+
+      // Send email using EmailJS
+      emailjs.send('service_ofl0lsh', 'template_jtljfrfl', formData)
+        .then(function() {
+          // Success
+          submitBtn.classList.remove('loading');
+          contactForm.style.display = 'none';
+          successMessage.classList.add('show');
+          
+          // Reset form after 3 seconds
+          setTimeout(() => {
+            contactForm.reset();
+            contactForm.style.display = 'block';
+            successMessage.classList.remove('show');
+          }, 3000);
+          
+        }, function(error) {
+          // Error
+          console.error('EmailJS error:', error);
+          submitBtn.classList.remove('loading');
+          errorMessage.classList.add('show');
+          
+          // Hide error message after 3 seconds
+          setTimeout(() => {
+            errorMessage.classList.remove('show');
+          }, 3000);
+        });
+    });
+  }
+
+  // Form validation enhancement
+  document.querySelectorAll('.form-group input, .form-group textarea').forEach(input => {
+    input.addEventListener('blur', function() {
+      if (this.value.trim() !== '') {
+        this.classList.add('has-value');
+      } else {
+        this.classList.remove('has-value');
+      }
+    });
+  });
 });
