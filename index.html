@@ -14,41 +14,100 @@
   <!-- Navigation -->
   <nav>
     <div class="container">
-      <h1 class="logo">Sumit Chaubey</h1>
+      <h1 class="logo">Portfolio</h1>
       <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#skills">My Skills</a></li>
         <li><a href="#blog">Blog</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <!-- Mobile menu toggle -->
+      <div class="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
   </nav>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-content fade-in">
+      <h1 class="hero-title typing-animation">Hi, I'm <span class="highlight">Sumit Chaubey</span></h1>
+      <p class="hero-subtitle fade-in-delay">Front-End Developer | Creative Problem Solver</p>
+      <div class="hero-buttons fade-in-delay-2">
+        <a href="#portfolio" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
   <!-- About Section -->
-  <section id="about" class="section">
+  <section id="about" class="section fade-in-section">
   <div class="container about-container">
     <!-- Left Content -->
     <div class="about-text">
       <h2>About Me</h2>
-      <p>
-        Hey there! I’m a front-end developer who loves turning ideas into beautiful, functional websites (with a touch of magic and caffeine). 
-        I may not have a decade of experience, but I make up for it with creativity, a sense of humor, and the occasional brilliant idea that surprises even me.
-        I’m a big fan of teamwork—mostly because working alone gets boring fast. I thrive in a group where we can brainstorm, laugh, and tackle challenges together.
-        <br>I’m also pretty good at coming up with out-of-the-box solutions… once I stop procrastinating.
+      <div class="professional-intro">
+        <h3 class="role-title">Front-End Developer | B.Tech CS | Logic-Driven Creator</h3>
+        <p class="intro-paragraph">
+          Hey! I'm <strong>Sumit</strong> – I build fast, beautiful UIs with <em>React</em> & <em>Tailwind</em>.
+        </p>
+      </div>
+      
+      <div class="about-highlights">
+        <div class="highlight-item">
+          <span class="highlight-icon">⚡</span>
+          <div>
+            <strong>High-Performance UIs</strong>
+            <p>Speed + Structure focused development</p>
+          </div>
+        </div>
+        
+        <div class="highlight-item">
+          <span class="highlight-icon">🧠</span>
+          <div>
+            <strong>CS Foundation</strong>
+            <p>DSA principles for scalable code</p>
+          </div>
+        </div>
+        
+        <div class="highlight-item">
+          <span class="highlight-icon">🤖</span>
+          <div>
+            <strong>ML Integration</strong>
+            <p>Web + Intelligence projects</p>
+          </div>
+        </div>
+      </div>
+      
+      <p class="closing-statement">
+        <strong>Ready to create next-gen web applications</strong>
       </p>
     </div>
 
     <!-- Right Image -->
     <div class="about-image">
-      <img src="Cute_Avatar-removebg-preview.png" alt="About Me Image" />
+      <img src="Cute_Avatar-removebg-preview.png" alt="Sumit Chaubey - Front-End Developer" />
+      <div class="image-caption">
+        <span class="caption-text">Building the future</span>
+      </div>
     </div>
   </div>
   </section>
 
-  
-
   <!-- Resume Section -->
-  <section id="resume" class="section">
+  <section id="resume" class="section fade-in-section">
     <div class="container">
       
       <section class="education-stairs">
@@ -76,46 +135,208 @@
     </div>
   </section>
 
-  <!-- Portfolio Section -->
-  <section id="portfolio" class="section">
+  <!-- Projects Section -->
+  <section id="portfolio" class="section fade-in-section">
     <div class="container">
-      <h2>Portfolio</h2>
+      <h2>My Projects</h2>
+      <p class="projects-intro">Here are some of my recent projects showcasing my skills in machine learning, deep learning, and modern web development</p>
+      
       <div class="portfolio-items">
-        <div class="portfolio-item">
-          <a href="https://lovely-taiyaki-46baa5.netlify.app/" target="_blank">
-          <img src="Untitled design (4).png" alt="Project 1"></a>
-          
-          <h4>Project 1- Docs Appointment System</h4>
-        </div>
-        <div class="portfolio-item">
-          
-          <a href="https://thriving-beignet-46d5c9.netlify.app/" target="_blank">
-          <img src="Untitled design (3).png" alt="Project 2"></a>
-          
-          <h4>Project 2- Car Rental Website</h4>
+        <div class="portfolio-item featured-project">
+          <div class="project-image">
+            <img src="Untitled design (4).png" alt="Waste Classification ML Model">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/isumit22/waste-classification-ml" target="_blank" class="project-link live">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+                <a href="https://github.com/isumit22/waste-classification-ml" target="_blank" class="project-link code">
+                  <i class="fab fa-github"></i> Source Code
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="portfolio-item">
           
-            <a href="https://prismatic-moonbeam-22524d.netlify.app/" target="_blank">
-            <img src="Untitled design (2).png" alt="Project 3"></a>
+          <div class="project-info">
+            <h4>🎯 Waste Classification ML Model</h4>
+            <p class="project-description">
+              A deep learning-powered waste classification system using PyTorch and ResNet-50 architecture. Classifies waste into 11 categories with intelligent disposal guidance. Features Flask API and web interface for real-time predictions.
+            </p>
             
-            <h4>Project 3 - E-Commerce</h4>
+            <div class="tech-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">PyTorch</span>
+              <span class="tech-tag">ResNet-50</span>
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">Deep Learning</span>
+              <span class="tech-tag">Computer Vision</span>
             </div>
-          <div class="portfolio-item">
+            
+            <div class="project-features">
+              <span class="feature">• 11-class waste categorization</span>
+              <span class="feature">• ResNet-50 CNN architecture</span>
+              <span class="feature">• Flask web API with CORS</span>
+              <span class="feature">• Smart disposal guidance system</span>
+              <span class="feature">• Real-time image classification</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="project-image">
+            <img src="Untitled design (4).png" alt="Doctor Appointment System">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://lovely-taiyaki-46baa5.netlify.app/" target="_blank" class="project-link live">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+                <a href="https://github.com/isumit22/doc-appointment" target="_blank" class="project-link code">
+                  <i class="fab fa-github"></i> Source Code
+                </a>
+              </div>
+            </div>
+          </div>
           
-            <a href="https://tranquil-boba-bb109d.netlify.app/" target="_blank">
-            <img src="Untitled design.png" alt="Project 4"></a>
-              
-            <h4>Project 4 - Food Delivery</h4>
+          <div class="project-info">
+            <h4>Doctor Appointment System</h4>
+            <p class="project-description">
+              A frontend healthcare appointment booking interface with multiple pages including patient login, doctor profiles, and appointment booking forms. Features responsive design and smooth user experience.
+            </p>
+            
+            <div class="tech-stack">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Responsive Design</span>
             </div>
+            
+            <div class="project-features">
+              <span class="feature">• Multi-page appointment system</span>
+              <span class="feature">• Doctor profile pages</span>
+              <span class="feature">• Booking confirmation interface</span>
+              <span class="feature">• Mobile responsive design</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="project-image">
+            <img src="Untitled design (3).png" alt="Car Rental Platform">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://thriving-beignet-46d5c9.netlify.app/" target="_blank" class="project-link live">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+                <a href="https://github.com/isumit22/CAR-RENTAL" target="_blank" class="project-link code">
+                  <i class="fab fa-github"></i> Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-info">
+            <h4>Car Rental Website</h4>
+            <p class="project-description">
+              A modern car rental service frontend with multiple car pages, booking interfaces, and payment forms. Features clean design with car listings and detailed vehicle information pages.
+            </p>
+            
+            <div class="tech-stack">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Bootstrap</span>
+            </div>
+            
+            <div class="project-features">
+              <span class="feature">• Car listing pages</span>
+              <span class="feature">• Vehicle detail views</span>
+              <span class="feature">• Booking interface</span>
+              <span class="feature">• Payment form pages</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="project-image">
+            <img src="Untitled design (2).png" alt="E-Commerce Platform">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://prismatic-moonbeam-22524d.netlify.app/" target="_blank" class="project-link live">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+                <a href="https://github.com/isumit22/ecommerce" target="_blank" class="project-link code">
+                  <i class="fab fa-github"></i> Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-info">
+            <h4>E-Commerce Website</h4>
+            <p class="project-description">
+              A frontend e-commerce platform with product listings, shopping cart interface, and checkout pages. Features modern design with appliance categories and interactive shopping experience.
+            </p>
+            
+            <div class="tech-stack">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Local Storage</span>
+            </div>
+            
+            <div class="project-features">
+              <span class="feature">• Product catalog pages</span>
+              <span class="feature">• Shopping cart functionality</span>
+              <span class="feature">• Category navigation</span>
+              <span class="feature">• Checkout interface</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="project-image">
+            <img src="Untitled design.png" alt="Food Delivery App">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://tranquil-boba-bb109d.netlify.app/" target="_blank" class="project-link live">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+                <a href="https://github.com/isumit22/Foody" target="_blank" class="project-link code">
+                  <i class="fab fa-github"></i> Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-info">
+            <h4>Food Delivery Website</h4>
+            <p class="project-description">
+              A restaurant and food delivery frontend with menu pages, cart functionality, and ordering interface. Features restaurant listings, food categories, and interactive ordering system.
+            </p>
+            
+            <div class="tech-stack">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">DOM Manipulation</span>
+            </div>
+            
+            <div class="project-features">
+              <span class="feature">• Restaurant menu pages</span>
+              <span class="feature">• Food category filters</span>
+              <span class="feature">• Cart management</span>
+              <span class="feature">• Order tracking interface</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Skills Section -->
-<section id="skills" class="section">
+<section id="skills" class="section fade-in-section">
     <h2>My Skills</h2>
-    <p>Here’s a snapshot of my technical skills and experience.</p>
+    <p>Here's a snapshot of my technical skills and experience.</p>
     
     <div class="skill">
       <p>HTML</p>
@@ -158,25 +379,73 @@
   
 
   <!-- Blog Section -->
-  <section id="blog" class="section">
+  <section id="blog" class="section fade-in-section">
     <div class="container">
       <h2>Blog</h2>
       <div class="blog-items">
         <div class="blog-item">
-          <h3>My Journey as a Front-End Developer</h3>
-          <p>
-            I’ll be honest – when I first started learning to code, it felt like I was trying to solve a puzzle with no picture on the box. HTML and CSS were a bit confusing, and JavaScript? Well, that seemed like another language entirely. But over time, things started clicking.
-            <br>
-            Now, I love bringing ideas to life on the web, whether it’s through a simple webpage or a more complex interactive design. Every project teaches me something new, and I’m always finding new ways to make things look good and work better. Plus, I have to admit – ChatGPT is my secret weapon for coding help. It’s like having a friendly coding companion who always has a solution (or at least a suggestion) ready.
-            <br>
-            I’m still early in my dev journey, but I’m always learning and growing. For me, coding is all about creating cool, user-friendly experiences. I’m excited for what’s next, and I can’t wait to see where this path takes me!</p>
+          <div class="blog-header">
+            <h3>🚀 From Confused to Component-Driven</h3>
+            <span class="blog-date">My Development Journey • 5 min read</span>
+          </div>
+          
+          <div class="blog-content">
+            <p class="blog-intro">
+              Learning to code felt like solving a puzzle without the picture. HTML and CSS seemed like foreign languages, and JavaScript? That was a whole other universe. But like many developers, things eventually started clicking.
+            </p>
+            
+            <p>
+              Now, my mission is to build digital experiences that aren't just functional, but genuinely exceptional. That's why I dove head-first into <strong>React</strong> and <strong>Tailwind CSS</strong> - two technologies that have completely transformed how I approach front-end development.
+            </p>
+            
+            <div class="tech-deep-dive">
+              <h4>⚛️ Why React Changed Everything for Me</h4>
+              <p>
+                React gives me superpowers to handle complexity. It lets me break down big, intimidating features into smaller, manageable components. Whether I'm building a complex dashboard or integrating ML models into user interfaces, React's component architecture keeps everything organized and scalable.
+              </p>
+              <p>
+                The state management, the lifecycle methods, the hooks - they all work together to create this beautiful, predictable way of building UIs. It's like having a well-organized toolbox where every tool has its place.
+              </p>
+            </div>
+            
+            <div class="tech-deep-dive">
+              <h4>🎨 Tailwind: My Secret Weapon</h4>
+              <p>
+                Tailwind CSS is my secret weapon for speed and style. Instead of writing custom CSS files that grow into unmanageable monsters, I can style directly in my components with utility classes. The result? UIs that load faster, look sharper, and are incredibly maintainable.
+              </p>
+              <p>
+                It's transformed my workflow from "design in Figma, then struggle to recreate in CSS" to "think in utilities, build rapidly, iterate quickly." Game-changer.
+              </p>
+            </div>
+            
+            <p>
+              Every project is a chance to push boundaries. Whether it's making a UI more intuitive, optimizing for performance, or figuring out how to integrate intelligent features using <strong>Machine Learning</strong>, I'm constantly exploring what's possible at the intersection of code and creativity.
+            </p>
+            
+            <p>
+              As a Computer Science student, I bring that logical, algorithmic thinking to front-end development. I'm actively exploring how <strong>Data Structures and Algorithms</strong> principles can make web applications not just prettier, but smarter and more efficient.
+            </p>
+            
+            <p class="blog-closing">
+              I'm still early in my journey, and yes, ChatGPT is totally my coding sidekick for those tricky moments! But the excitement of seeing an idea transform from concept to pixels on screen? That rush of solving complex problems with elegant code? That's what drives me every single day.
+            </p>
+            
+            <div class="blog-tags">
+              <span class="tag">React</span>
+              <span class="tag">Tailwind CSS</span>
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Component Architecture</span>
+              <span class="tag">Front-End Development</span>
+              <span class="tag">DSA</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="section">
+  <section id="contact" class="section fade-in-section">
     <!-- Contact Section -->
 <section id="contact" style="text-align: center; padding: 50px; background-color: #333; color: white;">
     <h2>Contact Me</h2>
