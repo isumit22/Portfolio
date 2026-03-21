@@ -1655,6 +1655,7 @@ html {
 
   .portfolio-item {
     margin-bottom: 0;
+    transform: none !important;
   }
 
   .project-links {
@@ -1757,6 +1758,7 @@ html {
     width: 30px;
     height: 30px;
   }
+
 }
 
 /* Tablet Styles */
