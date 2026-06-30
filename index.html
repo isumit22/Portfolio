@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Portfolio</title>
+  <title>Sumit Chaubey | Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Sumit Chaubey, a full stack developer building MERN applications, REST APIs, and machine learning powered solutions.">
   <!-- Google Fonts and Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -16,13 +17,13 @@
   <!-- Navigation -->
   <nav>
     <div class="container">
-      <h1 class="logo">Portfolio</h1>
+      <h1 class="logo">Sumit</h1>
       <ul class="nav-links">
         <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#skills">My Skills</a></li>
-        <li><a href="#blog">Blog</a></li>
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#achievements">Achievements</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <!-- Mobile menu toggle -->
@@ -43,10 +44,37 @@
   <section id="hero" class="hero-section">
     <div class="hero-content fade-in">
       <h1 class="hero-title typing-animation">Hi, I'm <span class="highlight">Sumit Chaubey</span></h1>
-      <p class="hero-subtitle fade-in-delay">Front-End Developer | Creative Problem Solver</p>
+      <p class="hero-role fade-in-delay">Full Stack Developer</p>
+      <p class="hero-stack fade-in-delay">MERN Stack &bull; Machine Learning &bull; REST APIs</p>
+      <p class="hero-summary fade-in-delay">
+        I build scalable web applications and AI-powered solutions using modern technologies, clean interfaces, and practical software engineering fundamentals.
+      </p>
       <div class="hero-buttons fade-in-delay-2">
-        <a href="#portfolio" class="btn btn-primary">View My Work</a>
-        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        <a href="#portfolio" class="btn btn-primary">View Projects</a>
+        <a href="Sumit_Chaubey_Resume.pdf" class="btn btn-secondary" download title="Add your resume PDF to this folder with this filename">Download Resume</a>
+      </div>
+      <div class="hero-socials fade-in-delay-2" aria-label="Professional profiles">
+        <a href="https://github.com/isumit22/" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/sumit-chaubey-33308a24b" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://leetcode.com/u/sumit22605/" target="_blank" title="LeetCode"><i class="fas fa-code"></i></a>
+      </div>
+      <div class="hero-stats fade-in-delay-2">
+        <div class="stat-card">
+          <strong>10+</strong>
+          <span>Projects</span>
+        </div>
+        <div class="stat-card">
+          <strong>250+</strong>
+          <span>DSA Problems</span>
+        </div>
+        <div class="stat-card">
+          <strong>700+</strong>
+          <span>GitHub Contributions</span>
+        </div>
+        <div class="stat-card">
+          <strong>2027</strong>
+          <span>B.Tech CSE</span>
+        </div>
       </div>
     </div>
     <div class="hero-scroll-indicator">
@@ -57,57 +85,62 @@
   <!-- About Section -->
   <section id="about" class="section fade-in-section">
   <div class="container about-container">
-    <!-- Left Content -->
     <div class="about-text">
       <h2>About Me</h2>
       <div class="professional-intro">
-        <h3 class="role-title">Front-End Developer | B.Tech CS | Logic-Driven Creator</h3>
+        <h3 class="role-title">Full Stack Developer | B.Tech CSE | MERN & ML Builder</h3>
         <p class="intro-paragraph">
-          Hey! I'm <strong>Sumit</strong> – I build fast, beautiful UIs with <em>React</em> & <em>Tailwind</em>.
+          Hey! I'm <strong>Sumit</strong>. I build practical web applications with <em>React</em>, <em>Node.js</em>, <em>Express</em>, <em>MongoDB</em>, and machine learning integrations.
         </p>
       </div>
       
       <div class="about-highlights">
         <div class="highlight-item">
-          <span class="highlight-icon">⚡</span>
+          <span class="highlight-icon"><i class="fas fa-server"></i></span>
           <div>
-            <strong>High-Performance UIs</strong>
-            <p>Speed + Structure focused development</p>
+            <strong>REST API Development</strong>
+            <p>Express routes, validation, integration, and clean backend structure</p>
           </div>
         </div>
         
         <div class="highlight-item">
-          <span class="highlight-icon">🧠</span>
+          <span class="highlight-icon"><i class="fas fa-lock"></i></span>
           <div>
-            <strong>CS Foundation</strong>
-            <p>DSA principles for scalable code</p>
+            <strong>Authentication & Databases</strong>
+            <p>JWT authentication, MongoDB schemas, and protected workflows</p>
           </div>
         </div>
         
         <div class="highlight-item">
-          <span class="highlight-icon">🤖</span>
+          <span class="highlight-icon"><i class="fas fa-brain"></i></span>
           <div>
-            <strong>ML Integration</strong>
-            <p>Web + Intelligence projects</p>
+            <strong>AI + Web Integration</strong>
+            <p>Flask APIs, image classification, and intelligent user-facing tools</p>
+          </div>
+        </div>
+
+        <div class="highlight-item">
+          <span class="highlight-icon"><i class="fas fa-display"></i></span>
+          <div>
+            <strong>Responsive Frontend</strong>
+            <p>React interfaces that are clean, fast, and mobile-friendly</p>
           </div>
         </div>
       </div>
       
       <p class="closing-statement">
-        <strong>Ready to create next-gen web applications</strong>
+        <strong>Focused on building useful products, writing maintainable code, and growing into a strong software engineer.</strong>
       </p>
     </div>
 
-    <!-- Right Image -->
     <div class="about-image">
-      <img src="Cute_Avatar-removebg-preview.png" alt="Sumit Chaubey - Front-End Developer" />
+      <img src="Cute_Avatar-removebg-preview.png" alt="Sumit Chaubey - Full Stack Developer" />
       <div class="image-caption">
-        <span class="caption-text">Building the future</span>
+        <span class="caption-text">Building useful software</span>
       </div>
     </div>
   </div>
   </section>
-
   <!-- Resume Section -->
   <section id="resume" class="section fade-in-section">
     <div class="container">
@@ -129,7 +162,7 @@
           <div class="step">
             <p class="year">2023 - Present</p>
             <h3>B.Tech in Computer Science</h3>
-            <p>G.L Bajaj insitute of technology</p>
+            <p>G.L. Bajaj Institute of Technology and Management</p>
           </div>
         </div>
       </section>
@@ -140,96 +173,57 @@
   <!-- Projects Section -->
   <section id="portfolio" class="section fade-in-section">
     <div class="container">
-      <h2>My Projects</h2>
-      <p class="projects-intro">Here are some of my recent projects showcasing my skills in machine learning, deep learning, and modern web development</p>
+      <h2>Featured Projects</h2>
+      <p class="projects-intro">Projects that show full-stack development, API design, dashboards, authentication workflows, and machine learning integration.</p>
       
       <div class="portfolio-items">
         <div class="portfolio-item featured-project">
           <div class="project-image">
-            <img src="rhy.jpg" alt="Waste Classification ML Model">
+            <img src="newpog.jpg" alt="Smart Waste Management System">
             <div class="project-overlay">
-              <div class="project-links">
-                <a href="https://github.com/isumit22/waste-classification-ml" target="_blank" class="project-link live">
-                  <i class="fas fa-external-link-alt"></i> Live Demo
-                </a>
-                <a href="https://github.com/isumit22/waste-classification-ml" target="_blank" class="project-link code">
-                  <i class="fab fa-github"></i> Source Code
-                </a>
+              <div class="project-links stacked-links">
+                <a href="https://login-eight-dun.vercel.app/" target="_blank" class="project-link live"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <a href="https://github.com/isumit22/project-SIH" target="_blank" class="project-link code"><i class="fab fa-github"></i> Citizen Portal</a>
+                <a href="https://github.com/isumit22/project-shawchh-sarthi" target="_blank" class="project-link code"><i class="fab fa-github"></i> Worker Portal</a>
+                <a href="https://github.com/isumit22/project-swachh-niyantran" target="_blank" class="project-link code"><i class="fab fa-github"></i> Admin Dashboard</a>
               </div>
             </div>
           </div>
-          
           <div class="project-info">
-            <h4>🎯 Waste Classification ML Model</h4>
-            <p class="project-description">
-              A deep learning-powered waste classification system using PyTorch and ResNet-50 architecture. Classifies waste into 11 categories with intelligent disposal guidance. Features Flask API and web interface for real-time predictions.
-            </p>
-            
+            <h4>Smart Waste Management System</h4>
+            <p class="project-description">Built a 3-portal waste management platform for citizens, waste collectors, and municipal admins with real-time tracking, dashboard views, and route-management focused workflows.</p>
             <div class="tech-stack">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">PyTorch</span>
-              <span class="tech-tag">ResNet-50</span>
-              <span class="tech-tag">Flask</span>
-              <span class="tech-tag">Deep Learning</span>
-              <span class="tech-tag">Computer Vision</span>
+              <span class="tech-tag">React</span><span class="tech-tag">Node.js</span><span class="tech-tag">Express</span><span class="tech-tag">MongoDB</span><span class="tech-tag">Leaflet Maps</span><span class="tech-tag">REST APIs</span>
             </div>
-            
             <div class="project-features">
-              <span class="feature">• 11-class waste categorization</span>
-              <span class="feature">• ResNet-50 CNN architecture</span>
-              <span class="feature">• Flask web API with CORS</span>
-              <span class="feature">• Smart disposal guidance system</span>
-              <span class="feature">• Real-time image classification</span>
+              <span class="feature">- 3 connected portals: citizen, worker, and admin</span>
+              <span class="feature">- Municipal dashboard for complaints and operational tracking</span>
+              <span class="feature">- Map-based collection and route-management experience</span>
+              <span class="feature">- Built for a Smart India Hackathon style problem statement</span>
             </div>
           </div>
         </div>
 
         <div class="portfolio-item">
           <div class="project-image">
-            <img src="newpog.jpg" alt="Smart Waste Management System">
+            <img src="rhy.jpg" alt="Waste Classification ML Model">
             <div class="project-overlay">
               <div class="project-links">
-                <a href="https://login-eight-dun.vercel.app/" target="_blank" class="project-link live">
-                  <i class="fas fa-external-link-alt"></i> Live Demo
-                </a>
-                <div class="multi-repo-links">
-                  <span class="repo-label">3 Platform Repositories:</span>
-                  <a href="https://github.com/isumit22/project-SIH" target="_blank" class="project-link code mini">
-                    <i class="fab fa-github"></i> Swachh (Citizen)
-                  </a>
-                  <a href="https://github.com/isumit22/project-shawchh-sarthi" target="_blank" class="project-link code mini">
-                    <i class="fab fa-github"></i> Swachh Sarthi (Worker)
-                  </a>
-                  <a href="https://github.com/isumit22/project-swachh-niyantran" target="_blank" class="project-link code mini">
-                    <i class="fab fa-github"></i> Admin Dashboard
-                  </a>
-                </div>
+                <a href="https://github.com/isumit22/waste-classification-ml" target="_blank" class="project-link code"><i class="fab fa-github"></i> Source Code</a>
               </div>
             </div>
           </div>
-          
           <div class="project-info">
-            <h4>🌱 Smart Waste Management System</h4>
-            <p class="project-description">
-              Multi-platform web-based waste management ecosystem with unified platform connecting 3 specialized portals: Swachh (citizen portal), Swachh Sarthi (waste collector platform), and Admin dashboard for municipal corporations.
-            </p>
-            
+            <h4>Waste Classification ML Model</h4>
+            <p class="project-description">Deep learning waste classification system using PyTorch and ResNet-50. It classifies waste into 11 categories and connects predictions with disposal guidance through a Flask web API.</p>
             <div class="tech-stack">
-              <span class="tech-tag">React</span>
-              <span class="tech-tag">Node.js</span>
-              <span class="tech-tag">Express</span>
-              <span class="tech-tag">MongoDB</span>
-              <span class="tech-tag">Leaflet Maps</span>
-              <span class="tech-tag">Web Platform</span>
+              <span class="tech-tag">Python</span><span class="tech-tag">PyTorch</span><span class="tech-tag">ResNet-50</span><span class="tech-tag">Flask</span><span class="tech-tag">Computer Vision</span>
             </div>
-            
             <div class="project-features">
-              <span class="feature">• Unified platform connecting 3 portals</span>
-              <span class="feature">• Citizen web app with gamification</span>
-              <span class="feature">• Worker management platform</span>
-              <span class="feature">• Municipal admin dashboard</span>
-              <span class="feature">• GPS route optimization</span>
-              <span class="feature">• Real-time waste tracking</span>
+              <span class="feature">- 11-class image classification workflow</span>
+              <span class="feature">- Flask API for prediction requests</span>
+              <span class="feature">- Smart disposal guidance mapped to model output</span>
+              <span class="feature">- Web interface for real-time testing</span>
             </div>
           </div>
         </div>
@@ -239,34 +233,21 @@
             <img src="Untitled design (4).png" alt="Doctor Appointment System">
             <div class="project-overlay">
               <div class="project-links">
-                <a href="https://lovely-taiyaki-46baa5.netlify.app/" target="_blank" class="project-link live">
-                  <i class="fas fa-external-link-alt"></i> Live Demo
-                </a>
-                <a href="https://github.com/isumit22/doc-appointment" target="_blank" class="project-link code">
-                  <i class="fab fa-github"></i> Source Code
-                </a>
+                <a href="https://lovely-taiyaki-46baa5.netlify.app/" target="_blank" class="project-link live"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <a href="https://github.com/isumit22/doc-appointment" target="_blank" class="project-link code"><i class="fab fa-github"></i> Source Code</a>
               </div>
             </div>
           </div>
-          
           <div class="project-info">
             <h4>Doctor Appointment System</h4>
-            <p class="project-description">
-              A frontend healthcare appointment booking interface with multiple pages including patient login, doctor profiles, and appointment booking forms. Features responsive design and smooth user experience.
-            </p>
-            
+            <p class="project-description">Frontend healthcare appointment interface with patient login screens, doctor profile pages, booking forms, and confirmation flows.</p>
             <div class="tech-stack">
-              <span class="tech-tag">HTML5</span>
-              <span class="tech-tag">CSS3</span>
-              <span class="tech-tag">JavaScript</span>
-              <span class="tech-tag">Responsive Design</span>
+              <span class="tech-tag">HTML5</span><span class="tech-tag">CSS3</span><span class="tech-tag">JavaScript</span><span class="tech-tag">Responsive Design</span>
             </div>
-            
             <div class="project-features">
-              <span class="feature">• Multi-page appointment system</span>
-              <span class="feature">• Doctor profile pages</span>
-              <span class="feature">• Booking confirmation interface</span>
-              <span class="feature">• Mobile responsive design</span>
+              <span class="feature">- Frontend-only appointment booking experience</span>
+              <span class="feature">- Doctor profiles and booking confirmation UI</span>
+              <span class="feature">- Mobile responsive page layouts</span>
             </div>
           </div>
         </div>
@@ -276,71 +257,21 @@
             <img src="Untitled design (3).png" alt="Car Rental Platform">
             <div class="project-overlay">
               <div class="project-links">
-                <a href="https://thriving-beignet-46d5c9.netlify.app/" target="_blank" class="project-link live">
-                  <i class="fas fa-external-link-alt"></i> Live Demo
-                </a>
-                <a href="https://github.com/isumit22/CAR-RENTAL" target="_blank" class="project-link code">
-                  <i class="fab fa-github"></i> Source Code
-                </a>
+                <a href="https://thriving-beignet-46d5c9.netlify.app/" target="_blank" class="project-link live"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <a href="https://github.com/isumit22/CAR-RENTAL" target="_blank" class="project-link code"><i class="fab fa-github"></i> Source Code</a>
               </div>
             </div>
           </div>
-          
           <div class="project-info">
             <h4>Car Rental Website</h4>
-            <p class="project-description">
-              A modern car rental service frontend with multiple car pages, booking interfaces, and payment forms. Features clean design with car listings and detailed vehicle information pages.
-            </p>
-            
+            <p class="project-description">Responsive car rental frontend with vehicle listings, detail views, booking screens, and payment-form layouts.</p>
             <div class="tech-stack">
-              <span class="tech-tag">HTML5</span>
-              <span class="tech-tag">CSS3</span>
-              <span class="tech-tag">JavaScript</span>
-              <span class="tech-tag">Bootstrap</span>
+              <span class="tech-tag">HTML5</span><span class="tech-tag">CSS3</span><span class="tech-tag">JavaScript</span><span class="tech-tag">Bootstrap</span>
             </div>
-            
             <div class="project-features">
-              <span class="feature">• Car listing pages</span>
-              <span class="feature">• Vehicle detail views</span>
-              <span class="feature">• Booking interface</span>
-              <span class="feature">• Payment form pages</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="portfolio-item">
-          <div class="project-image">
-            <img src="Untitled design (2).png" alt="E-Commerce Platform">
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="https://prismatic-moonbeam-22524d.netlify.app/" target="_blank" class="project-link live">
-                  <i class="fas fa-external-link-alt"></i> Live Demo
-                </a>
-                <a href="https://github.com/isumit22/ecommerce" target="_blank" class="project-link code">
-                  <i class="fab fa-github"></i> Source Code
-                </a>
-              </div>
-            </div>
-          </div>
-          
-          <div class="project-info">
-            <h4>E-Commerce Website</h4>
-            <p class="project-description">
-              A frontend e-commerce platform with product listings, shopping cart interface, and checkout pages. Features modern design with appliance categories and interactive shopping experience.
-            </p>
-            
-            <div class="tech-stack">
-              <span class="tech-tag">HTML5</span>
-              <span class="tech-tag">CSS3</span>
-              <span class="tech-tag">JavaScript</span>
-              <span class="tech-tag">Local Storage</span>
-            </div>
-            
-            <div class="project-features">
-              <span class="feature">• Product catalog pages</span>
-              <span class="feature">• Shopping cart functionality</span>
-              <span class="feature">• Category navigation</span>
-              <span class="feature">• Checkout interface</span>
+              <span class="feature">- Car catalog and vehicle detail pages</span>
+              <span class="feature">- Booking and payment-form UI</span>
+              <span class="feature">- Responsive layout across screen sizes</span>
             </div>
           </div>
         </div>
@@ -350,186 +281,94 @@
             <img src="Untitled design.png" alt="Food Delivery App">
             <div class="project-overlay">
               <div class="project-links">
-                <a href="https://tranquil-boba-bb109d.netlify.app/" target="_blank" class="project-link live">
-                  <i class="fas fa-external-link-alt"></i> Live Demo
-                </a>
-                <a href="https://github.com/isumit22/Foody" target="_blank" class="project-link code">
-                  <i class="fab fa-github"></i> Source Code
-                </a>
+                <a href="https://tranquil-boba-bb109d.netlify.app/" target="_blank" class="project-link live"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <a href="https://github.com/isumit22/Foody" target="_blank" class="project-link code"><i class="fab fa-github"></i> Source Code</a>
               </div>
             </div>
           </div>
-          
           <div class="project-info">
             <h4>Food Delivery Website</h4>
-            <p class="project-description">
-              A restaurant and food delivery frontend with menu pages, cart functionality, and ordering interface. Features restaurant listings, food categories, and interactive ordering system.
-            </p>
-            
+            <p class="project-description">Restaurant ordering frontend with menu pages, category filters, cart interactions, and order-flow screens.</p>
             <div class="tech-stack">
-              <span class="tech-tag">HTML5</span>
-              <span class="tech-tag">CSS3</span>
-              <span class="tech-tag">JavaScript</span>
-              <span class="tech-tag">DOM Manipulation</span>
+              <span class="tech-tag">HTML5</span><span class="tech-tag">CSS3</span><span class="tech-tag">JavaScript</span><span class="tech-tag">DOM Manipulation</span>
             </div>
-            
             <div class="project-features">
-              <span class="feature">• Restaurant menu pages</span>
-              <span class="feature">• Food category filters</span>
-              <span class="feature">• Cart management</span>
-              <span class="feature">• Order tracking interface</span>
+              <span class="feature">- Menu and food category UI</span>
+              <span class="feature">- Cart management interactions</span>
+              <span class="feature">- Ordering interface and tracking screens</span>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-
   <!-- Skills Section -->
-<section id="skills" class="section fade-in-section">
-    <h2>My Skills</h2>
-    <p>Here's a snapshot of my technical skills and experience.</p>
-    
-    <div class="skills-container">
-      <div class="skill">
-        <div class="skill-header">
-          <p>HTML</p>
-          <span class="skill-percentage">85%</span>
-        </div>
-        <div class="progress-bar" data-percent="85"></div>
-      </div>
-      
-      <div class="skill">
-        <div class="skill-header">
-          <p>CSS</p>
-          <span class="skill-percentage">90%</span>
-        </div>
-        <div class="progress-bar" data-percent="90"></div>
-      </div>
-      
-      <div class="skill">
-        <div class="skill-header">
-          <p>JavaScript</p>
-          <span class="skill-percentage">70%</span>
-        </div>
-        <div class="progress-bar" data-percent="70"></div>
-      </div>
-      
-      <div class="skill">
-        <div class="skill-header">
-          <p>C Language</p>
-          <span class="skill-percentage">90%</span>
-        </div>
-        <div class="progress-bar" data-percent="90"></div>
-      </div>
-      
-      <div class="skill">
-        <div class="skill-header">
-          <p>C++</p>
-          <span class="skill-percentage">74%</span>
-        </div>
-        <div class="progress-bar" data-percent="74"></div>
-      </div>
-
-      <div class="skill">
-        <div class="skill-header">
-          <p>DSA</p>
-          <span class="skill-percentage">35%</span>
-        </div>
-        <div class="progress-bar" data-percent="35"></div>
-      </div>
-      
-      <div class="skill">
-        <div class="skill-header">
-          <p>Deployment</p>
-          <span class="skill-percentage">75%</span>
-        </div>
-        <div class="progress-bar" data-percent="75"></div>
-      </div>
-      
-      <div class="skill">
-        <div class="skill-header">
-          <p>Git & GitHub</p>
-          <span class="skill-percentage">85%</span>
-        </div>
-        <div class="progress-bar" data-percent="85"></div>
-      </div>
-    </div>
-
-  </section>
-  
-
-  <!-- Blog Section -->
-  <section id="blog" class="section fade-in-section">
+  <section id="skills" class="section fade-in-section">
     <div class="container">
-      <h2>Blog</h2>
-      <div class="blog-items">
-        <div class="blog-item">
-          <div class="blog-header">
-            <h3>🚀 From Confused to Component-Driven</h3>
-            <span class="blog-date">My Development Journey • 5 min read</span>
+      <h2>Technical Skills</h2>
+      <p class="skills-intro">A practical stack for building full-stack web applications, APIs, and ML-powered features.</p>
+      <div class="skills-container skill-groups">
+        <div class="skill-group">
+          <h3><i class="fas fa-code"></i> Languages</h3>
+          <div class="skill-badges">
+            <span>JavaScript</span><span>Python</span><span>C++</span><span>C</span><span>Java</span>
           </div>
-          
-          <div class="blog-content">
-            <p class="blog-intro">
-              Learning to code felt like solving a puzzle without the picture. HTML and CSS seemed like foreign languages, and JavaScript? That was a whole other universe. But like many developers, things eventually started clicking.
-            </p>
-            
-            <p>
-              Now, my mission is to build digital experiences that aren't just functional, but genuinely exceptional. That's why I dove head-first into <strong>React</strong> and <strong>Tailwind CSS</strong> - two technologies that have completely transformed how I approach front-end development.
-            </p>
-            
-            <div class="tech-deep-dive">
-              <h4>⚛️ Why React Changed Everything for Me</h4>
-              <p>
-                React gives me superpowers to handle complexity. It lets me break down big, intimidating features into smaller, manageable components. Whether I'm building a complex dashboard or integrating ML models into user interfaces, React's component architecture keeps everything organized and scalable.
-              </p>
-              <p>
-                The state management, the lifecycle methods, the hooks - they all work together to create this beautiful, predictable way of building UIs. It's like having a well-organized toolbox where every tool has its place.
-              </p>
-            </div>
-            
-            <div class="tech-deep-dive">
-              <h4>🎨 Tailwind: My Secret Weapon</h4>
-              <p>
-                Tailwind CSS is my secret weapon for speed and style. Instead of writing custom CSS files that grow into unmanageable monsters, I can style directly in my components with utility classes. The result? UIs that load faster, look sharper, and are incredibly maintainable.
-              </p>
-              <p>
-                It's transformed my workflow from "design in Figma, then struggle to recreate in CSS" to "think in utilities, build rapidly, iterate quickly." Game-changer.
-              </p>
-            </div>
-            
-            <p>
-              Every project is a chance to push boundaries. Whether it's making a UI more intuitive, optimizing for performance, or figuring out how to integrate intelligent features using <strong>Machine Learning</strong>, I'm constantly exploring what's possible at the intersection of code and creativity.
-            </p>
-            
-            <p>
-              As a Computer Science student, I bring that logical, algorithmic thinking to front-end development. I'm actively exploring how <strong>Data Structures and Algorithms</strong> principles can make web applications not just prettier, but smarter and more efficient.
-            </p>
-            
-            <p class="blog-closing">
-              I'm still early in my journey, and yes, ChatGPT is totally my coding sidekick for those tricky moments! But the excitement of seeing an idea transform from concept to pixels on screen? That rush of solving complex problems with elegant code? That's what drives me every single day.
-            </p>
-            
-            <div class="blog-tags">
-              <span class="tag">React</span>
-              <span class="tag">Tailwind CSS</span>
-              <span class="tag">Machine Learning</span>
-              <span class="tag">Component Architecture</span>
-              <span class="tag">Front-End Development</span>
-              <span class="tag">DSA</span>
-            </div>
+        </div>
+        <div class="skill-group">
+          <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+          <div class="skill-badges">
+            <span>React</span><span>Tailwind CSS</span><span>HTML5</span><span>CSS3</span><span>Responsive UI</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3><i class="fas fa-database"></i> Backend</h3>
+          <div class="skill-badges">
+            <span>Node.js</span><span>Express</span><span>MongoDB</span><span>REST APIs</span><span>JWT Auth</span><span>Flask</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3><i class="fas fa-screwdriver-wrench"></i> Tools</h3>
+          <div class="skill-badges">
+            <span>Git</span><span>GitHub</span><span>Postman</span><span>Vercel</span><span>Netlify</span><span>Render</span>
           </div>
         </div>
       </div>
     </div>
   </section>
-
+  <!-- Achievements Section -->
+  <section id="achievements" class="section fade-in-section">
+    <div class="container">
+      <h2>Achievements</h2>
+      <p class="achievements-intro">A quick snapshot of project work, problem solving, and engineering practice.</p>
+      <div class="achievements-grid">
+        <div class="achievement-card">
+          <i class="fas fa-trophy"></i>
+          <h3>Smart India Hackathon</h3>
+          <p>Built a multi-portal waste management platform around a real civic technology problem statement.</p>
+        </div>
+        <div class="achievement-card">
+          <i class="fas fa-diagram-project"></i>
+          <h3>10+ Projects Built</h3>
+          <p>Created web apps across full-stack development, frontend interfaces, dashboards, and ML integration.</p>
+        </div>
+        <div class="achievement-card">
+          <i class="fas fa-code"></i>
+          <h3>250+ DSA Problems</h3>
+          <p>Practicing problem solving through LeetCode and strengthening core computer science fundamentals.</p>
+        </div>
+        <div class="achievement-card">
+          <i class="fab fa-github"></i>
+          <h3>Active on GitHub</h3>
+          <p>Maintaining repositories, improving projects, and documenting work for review and collaboration.</p>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- Contact Section -->
   <section id="contact" class="section fade-in-section">
     <div class="container">
       <h2>Get In Touch</h2>
-      <p class="contact-intro">Ready to start your next project? Let's collaborate and create something amazing together!</p>
+      <p class="contact-intro">Open to internships, project collaborations, and entry-level software development opportunities.</p>
       
       <div class="contact-content">
         <!-- Contact Form -->
@@ -628,19 +467,14 @@
         </div>
       </div>
     </div>
-    </p>
   </section>
-  
-  <!-- Add Font Awesome for Icons -->
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  
-  </section>
+
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>&copy; 2025 Sumit Chaubey. All Rights Reserved.</p>
+      <p>&copy; 2026 Sumit Chaubey. All Rights Reserved.</p>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
-<script src="script.js"></script>
